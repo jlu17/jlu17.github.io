@@ -1,0 +1,271 @@
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-style: bold;
+  letter-spacing: 0.5em;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/* The tabs at the top. */
+
+.tabs {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  padding-bottom: 30px;
+}
+
+.tablinks {
+  padding: 0.625em 1em;
+  cursor: pointer;
+  transition: all .4s linear;
+}
+
+#about {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin:0 auto;
+  display: inline-block;
+}
+
+#work {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin:0 auto;
+  display: inline-block;
+}
+
+/* The section with my face and a short description. */
+
+.description {
+  position: relative;
+  margin: 0 50px;
+  text-align: center;
+  /* border-style: solid;*/
+}
+
+.description > * {
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/* The blue photo of me */
+
+.jenphoto img {
+  width: 100%;
+}
+
+.jenphoto {
+  /* border-style: solid;*/
+  display: inline-block;
+  width: 25%;
+  max-width: 15em;
+}
+
+.jendescription {
+  margin-left: 50px;
+  /* border-style: solid;*/
+  display: inline-block;
+  overflow-wrap: break-word;
+  width: 50%;
+  line-height: normal;
+  font-size: 1.1em;
+}
+
+/* The start of all the sections below the header stuff. */
+
+.body {
+  padding-bottom: 200px;
+}
+
+#resume {
+  text-align: center;
+  margin: 10% 15%;
+}
+
+/* I have all the sections in one class so that I can change the title color
+and border styles super easily section to section. */
+
+.section-title {
+  color: #669999;
+  letter-spacing: 0.1em;
+}
+
+.section {
+  margin: 4em auto;
+  padding: 2em 0;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #EFEFEF;
+  box-shadow: 2px 2px 6px #EFEFEF;
+  /* padding: 10px;
+  padding-bottom: 2em;*/
+  max-width: 800px;
+}
+
+/* Specific to the items section. */
+
+#items {
+  text-align: center;
+}
+
+.item > * {
+    vertical-align: middle;
+    line-height: normal;
+    margin-bottom: 1em;
+}
+
+.image-and-tools {
+  display: inline-block;
+  /* border-style: solid; */
+  width: 25%;
+  margin-right: 1.5em;
+  max-width: 150px;
+  text-align: center;
+}
+
+.item-image {
+  width: 90%;
+  margin: auto;
+}
+
+.item-image img {
+  width: 100%;
+}
+
+.tools-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.item-tools {
+  width: 70%;
+  margin: auto;
+}
+
+.item-tools img {
+  width: 40%;
+  margin: 1%;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.item-description {
+  display: inline-block;
+  /* border-style: solid; */
+  width: 50%;
+  text-align: left;
+  max-width: 400px;
+}
+
+.item-short-description {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.item-long-description {
+  white-space: pre-wrap;
+}
+
+.item-long-description ul {
+  margin: 0 5;
+  padding: 5 0 0 0;
+}
+
+/* Skills section */
+
+.skill {
+  margin-bottom: 2em;
+}
+
+.skill > * {
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.skills-text {
+  display: inline-block;
+}
+
+.tool-image {
+  width: 2em;
+  display: inline-block;
+  margin: 5px;
+}
+
+.tool-image img {
+  width: 100%;
+}
+
+/* Portfolio side */
+
+#portfolio {
+  margin: 4em;
+}
+
+#portfolio .section > * {
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.portfolio-image {
+  width: 20%;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.portfolio-image img {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #669999;
+  height: 200px;
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.footer-items {
+    margin: auto;
+    margin-top: 60px;
+}
+
+.icons {
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+}
+
+.icons img {
+  width: 10%;
+  min-width: 30px;
+  max-width: 50px;
+  margin: 1em;
+}
