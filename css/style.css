@@ -22,6 +22,11 @@ body {
   padding-bottom: 30px;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 /* The tabs at the top. */
 
 .tabs {
@@ -51,6 +56,12 @@ body {
   border-bottom-right-radius: 10px;
   margin: 0;
   display: inline-block;
+}
+
+#home {
+  background-color: #669999;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 /* The section with my face and a short description. */

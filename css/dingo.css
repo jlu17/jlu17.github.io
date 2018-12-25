@@ -1,0 +1,63 @@
+.dingo-dark {
+  background-color: #0F4172;
+  padding: 100px 20% 100px 20%;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+}
+
+.dingo-light {
+  background-color: #EEEEEE;
+  padding: 100px 20% 100px 20%;
+  font-family: "Open Sans", sans-serif;
+  color: #0F4172;
+}
+
+.dingo-main-img {
+  display: inline-block;
+  width: 30%;
+}
+
+.dingo-main-text {
+  display: inline-block;
+  width: 50%;
+  color: #FFFFFF;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.dingo-main-img img {
+  width: 100%;
+}
+
+.dingo-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.dingo-main-description {
+  font-size: 24px;
+}
+
+.section-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+/* Context */
+
+.context-photos {
+  width: 30%;
+}
+
+.context-content {
+  width: 50%;
+}
+
+.section-content {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
