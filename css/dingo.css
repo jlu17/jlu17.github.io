@@ -1,20 +1,73 @@
+:root {
+  --navy: #0F4172;
+  --grey: #EEEEEE;
+  --light: #CAE9EF;
+  --medium: #7FC3D8;
+  --dark: #042649;
+  --pFont: "Open Sans";
+  --hFont: "Montserrat";
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-family: var(--pFont), sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.header-dark {
+  padding-top: 10px;
+  color: white;
+  filter: drop-shadow(0px 3px 2px var(--dark));
+}
+
 .dingo-dark {
-  background-color: #0F4172;
+  background-color: var(--navy);
   padding: 100px 20% 100px 20%;
-  font-family: "Open Sans", sans-serif;
-  color: #FFFFFF;
+  color: white;
+  text-align: center;
+}
+
+.dingo-dark p {
+  color: var(--light);
+  letter-spacing: 0.4px;
 }
 
 .dingo-light {
   background-color: #EEEEEE;
   padding: 100px 20% 100px 20%;
-  font-family: "Open Sans", sans-serif;
-  color: #0F4172;
+  color: var(--navy);
+}
+
+.section-header h1 {
+  display: inline-block;
+}
+
+.dingo-dark h1 {
+  box-shadow: inset 0em -0.6em var(--dark);
+}
+
+.dingo-light h1 {
+  box-shadow: inset 0em -0.6em var(--light);
+}
+
+/* Dingo */
+
+.dingo-header {
+  margin-top: 80px;
 }
 
 .dingo-main-img {
   display: inline-block;
   width: 30%;
+  vertical-align: middle;
 }
 
 .dingo-main-text {
@@ -23,41 +76,147 @@
   color: #FFFFFF;
   text-align: left;
   margin-left: 10%;
-}
-
-.dingo-main-img img {
-  width: 100%;
+  vertical-align: middle;
 }
 
 .dingo-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.dingo-main-description {
+.dingo-main-description p {
   font-size: 24px;
+  color: white;
 }
 
-.section-header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  padding-bottom: 30px;
-}
+/* Context
 
-/* Context */
+*/
 
 .context-photos {
   width: 30%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .context-content {
   width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 10%;
 }
 
 .section-content {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.section-subheader {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.section-image {
+  width: 75%;
+  margin: 2em auto 2em auto;
+}
+
+.dingo-dark img {
+  filter: drop-shadow(0px 3px 2px var(--dark));
+}
+
+.dingo-light img {
+  filter: drop-shadow(0px 4px 2px #CCCCCC);
+}
+
+.section-half {
+  width: 40%;
+  margin: auto 3% auto 3%;
+  display: inline-block;
+}
+
+/* User Research */
+
+.research-takeaway {
+  width: 70%;
+  margin-left: 5%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.research-takeaway h3 {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+.research-icon {
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left {
+  text-align: left;
+}
+
+/* Iterations */
+
+.iteration {
+  margin: 20px 0 20px 0;
+}
+
+.iteration-tries {
+  width: 12%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.iteration-final {
+  width: 25%;
+  margin-left: 3%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.iteration-explanation {
+  display: inline-block;
+  text-align: left;
+  margin-left: 5%;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.iteration-explanation h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.prototype {
+  filter: drop-shadow(0px 4px 4px var(--dark));
+  margin-bottom: 80px;
+}
+
+.white-text {
+  color: white;
+}
+
+.home {
+  width: 5%;
+  max-width: 30px;
+  margin: auto;
+  display: inline-block;
+}
+
+.home img {
+  opacity: 0.5;
+}
+
+.home img:hover {
+  opacity: 1;
 }

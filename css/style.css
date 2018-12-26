@@ -13,13 +13,15 @@ body {
 }
 
 .header {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
   position: relative;
   width: 100%;
-  text-align: center;
-  font-style: bold;
   letter-spacing: 0.5em;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
 }
 
 a {
@@ -245,10 +247,34 @@ and border styles super easily section to section. */
   width: 20%;
   margin: 0.5em;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .portfolio-image img {
   width: 100%;
+}
+
+.portfolio-product {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.portfolio-product .portfolio-image {
+  width: 40px;
+}
+
+.portfolio-title {
+  display: inline-block;
+  color: #0F4172;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.dingo-main-description p {
+  font-size: 24px;
+  color: white;
 }
 
 /* Footer */
