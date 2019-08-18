@@ -8,6 +8,39 @@
   --hFont: "Montserrat";
 }
 
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  letter-spacing: 0.5em;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.home {
+  width: 5%;
+  max-width: 30px;
+  margin: auto;
+  display: inline-block;
+}
+
 img {
   width: 100%;
 }
@@ -46,7 +79,7 @@ h1 {
   color: var(--navy);
 }
 
-.section-header h1 {
+.section-header h1 { 
   display: inline-block;
 }
 
@@ -114,7 +147,7 @@ h1 {
   margin: auto;
 }
 
-.section-subheader {
+h2.section-subheader {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   margin-bottom: 10px;
@@ -204,13 +237,6 @@ h1 {
 
 .white-text {
   color: white;
-}
-
-.home {
-  width: 5%;
-  max-width: 30px;
-  margin: auto;
-  display: inline-block;
 }
 
 .home img {

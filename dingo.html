@@ -6,229 +6,227 @@
     <meta name="author" content="Jennifer Lu">
     <meta name="description" content="Jennifer's website">
     <title>Jennifer Lu | Dingo</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/dingo.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="dingo-dark">
-        <div class="header header-dark">JENNIFER LU</div>
-        <div class="home"><a href="./index.html"><img src="./img/home.png"></a></div>
-        <div class="dingo-header">
-          <div class="dingo-main-img"><img src="./img/dingo-circle.png"></div>
-          <div class="dingo-main-text">
-            <div class="dingo-title">dingo</div>
-            <div class="dingo-main-description">
-              <p>Making Berkeley feel a little safer one notification at a time.</p>
-            </div>
+    <section class="dingo-dark">
+      <div class="header header-dark">JENNIFER LU</div>
+      <div class="home"><a href="./index.html"><img src="./img/home.png"></a></div>
+      <div class="dingo-header">
+        <div class="dingo-main-img"><img src="./img/dingo-circle.png"></div>
+        <div class="dingo-main-text">
+          <div class="dingo-title">dingo</div>
+          <div class="dingo-main-description">
+            <p>Making Berkeley feel a little safer one notification at a time.</p>
           </div>
         </div>
       </div>
-      <div class="dingo-light">
-        <div class="section-header">
-          <h1>Context</h1>
-        </div>
-        <div class="context-photos">
-          <img src="./img/dingo/tabling.jpg">
-          <img src="./img/dingo/team.jpg">
-        </div>
-        <div class="context-content">
-          <p>This is a redesign + proper implementation of a vision that 7 students at Berkeley (including me!) had that would improve the feeling of safety at Berkeley. The initial design and implementation was done in Fall 2017 with React Native, but the version only worked on Android (not without a ton of bugs). The current implementation I’m working on is in Swift and can be found here.</p>
+    </section>
+    <section class="dingo-light">
+      <div class="section-header">
+        <h1>Context</h1>
+      </div>
+      <div class="context-photos">
+        <img src="./img/dingo/tabling.jpg">
+        <img src="./img/dingo/team.jpg">
+      </div>
+      <div class="context-content">
+        <p>This is a redesign + proper implementation of a vision that 7 students at Berkeley (including me!) had that would improve the feeling of safety at Berkeley. The initial design and implementation was done in Fall 2017 with React Native, but the version only worked on Android (not without a ton of bugs). The current implementation I’m working on is in Swift and can be found here.</p>
+      </div>
+    </section>
+    <section class="dingo-dark">
+      <div class="section-header">
+        <h1>Exploring the Problem</h1>
+      </div>
+      <div class="section-content">
+        <p>Berkeley is not the safest city. At night, it’s common for students to ask their friends to text them when they get home.</p>
+        <p>We wanted to get an idea of how safe students feel at Berkeley, as well as methods they take to stay safe when going home at night.</p>
+      </div>
+      <div class="section-header">
+        <h1>User Research</h1>
+      </div>
+      <div class="section-content">
+        <p>In Fall 2017, we chatted with ~120 students on Sproul about this issue.</p>
+        <p></p>
+        <p>In Spring 2018, we conducted 16 in-depth interviews with students on night-time safety.</p>
+        <p></p>
+        <p>Main takeaways:</p>
+      </div>
+      <div class="section-content">
+        <div class="research-icon"><img src="./img/dingo/research-night.png"></div>
+        <div class="research-takeaway">
+          <h3>Situation</h3>
+          <p>Students most often walk home alone at night from a friend’s place, a party, or the library.</p>
         </div>
       </div>
-      <div class="dingo-dark">
-        <div class="section-header">
-          <h1>Exploring the Problem</h1>
+      <div class="section-content">
+        <div class="research-icon"><img src="./img/dingo/research-safety.png"></div>
+        <div class="research-takeaway">
+          <h3>Safety</h3>
+          <p>Students either:
+            <br>1) feel safe but cautious because nothing has happened to them, or
+            <br>2) feel unsafe because of an incident that has happened to them or someone they know.
+            <br>
+            <br>Safety also correlates with familiarity with the area.</p>
         </div>
-        <div class="section-content">
-          <p>Berkeley is not the safest city. At night, it’s common for students to ask their friends to text them when they get home.</p>
-          <p>We wanted to get an idea of how safe students feel at Berkeley, as well as methods they take to stay safe when going home at night.</p>
-        </div>
-        <div class="section-header">
-          <h1>User Research</h1>
-        </div>
-        <div class="section-content">
-          <p>In Fall 2017, we chatted with ~120 students on Sproul about this issue.</p>
-          <p></p>
-          <p>In Spring 2018, we conducted 16 in-depth interviews with students on night-time safety.</p>
-          <p></p>
-          <p>Main takeaways:</p>
-        </div>
-        <div class="section-content">
-          <div class="research-icon"><img src="./img/dingo/research-night.png"></div>
-          <div class="research-takeaway">
-            <h3>Situation</h3>
-            <p>Students most often walk home alone at night from a friend’s place, a party, or the library.</p>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="research-icon"><img src="./img/dingo/research-safety.png"></div>
-          <div class="research-takeaway">
-            <h3>Safety</h3>
-            <p>Students either:
-              <br>1) feel safe but cautious because nothing has happened to them, or
-              <br>2) feel unsafe because of an incident that has happened to them or someone they know.
+      </div>
+      <div class="section-content">
+        <div class="research-icon"><img src="./img/dingo/research-texting.png"></div>
+        <div class="research-takeaway">
+          <h3>Modes of Communication</h3>
+          <p>Most students track their friends’ safety either through texting or through Find My Friends. Using location-tracking apps <span class="white-text">isn’t correlated with the feeling of safety</span> that students experience but rather <span class="white-text">privacy concerns</span> they may have. The feeling of safety isn’t so extreme that it would prompt location tracking.
               <br>
-              <br>Safety also correlates with familiarity with the area.</p>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="research-icon"><img src="./img/dingo/research-texting.png"></div>
-          <div class="research-takeaway">
-            <h3>Modes of Communication</h3>
-            <p>Most students track their friends’ safety either through texting or through Find My Friends. Using location-tracking apps <span class="white-text">isn’t correlated with the feeling of safety</span> that students experience but rather <span class="white-text">privacy concerns</span> they may have. The feeling of safety isn’t so extreme that it would prompt location tracking.
-                <br>
-                <br>When students forget to text their friends that they get home, in most scenarios, their friends either 1) get mildly worried and check-in or 2) forget to check-in. This highlights a problem of <span class="white-text">lack of normalizing accountability</span> for one's friends' safety.</p>
-          </div>
-        </div>
-        <h2 class="section-subheader">Target Audience</h2>
-        <div class="section-content">
-          <p>College students coming home from either the library or late night activities. These students feel some level of danger walking alone at night, but not enough to ask someone to walk home with them and not enough to check in on their friend’s location when their friends walk home.
-          <br>
-          <br>Dingo, as an app, needs to be designed to be easy-to-use (frictionless) for students that see remembering to text as already too much friction. It also needs to be non-intrusive to account for those not willing to constantly share their location with their friend.</p>
+              <br>When students forget to text their friends that they get home, in most scenarios, their friends either 1) get mildly worried and check-in or 2) forget to check-in. This highlights a problem of <span class="white-text">lack of normalizing accountability</span> for one's friends' safety.</p>
         </div>
       </div>
-      <div class="dingo-light">
-        <div class="section-header">
-          <h1>Ideation Process</h1>
+      <h2 class="section-subheader">Target Audience</h2>
+      <div class="section-content">
+        <p>College students coming home from either the library or late night activities. These students feel some level of danger walking alone at night, but not enough to ask someone to walk home with them and not enough to check in on their friend’s location when their friends walk home.
+        <br>
+        <br>Dingo, as an app, needs to be designed to be easy-to-use (frictionless) for students that see remembering to text as already too much friction. It also needs to be non-intrusive to account for those not willing to constantly share their location with their friend.</p>
+      </div>
+    </section>
+    <section class="dingo-light">
+      <div class="section-header">
+        <h1>Ideation Process</h1>
+      </div>
+      <h2 class="section-subheader">Branding</h2>
+      <div class="section-content left">
+        <p>Dingo is...
+        <br>1) Fun
+        <br>2) Reliable
+        <br>3) Extremely easy to use
+        <br>4) Non-intrusive
+        <br>
+        <br>I designed around these characteristics.</p>
+      </div>
+      <h2 class="section-subheader">Design System</h2>
+      <div class="section-content left">
+        <p>Font: I chose Open Sans to reflect the reliability and ease of use that Dingo aims to have.</p>
+        <p>Color scheme: I chose a dark color scheme for easier use at night, our targeted time use. I chose navy as the main color because 1) it mimics the night time with a more soothing feel and 2) it is close to the Berkeley logo.</p>
+      </div>
+      <div class="section-image">
+        <img src="./img/dingo/branding.png">
+      </div>
+    </section>
+    <section class="dingo-dark">
+      <div class="section-header">
+        <h1>Workflow</h1>
+      </div>
+      <h2 class="section-subheader">Onboarding</h2>
+      <div class="section-image">
+        <img src="./img/dingo/workflow-onboarding.png">
+      </div>
+      <div class="section-content">
+        <p>I chose to have the user add the default friends and location with the idea in mind that when they open the app, they only need to tap one button when used to go home.</p>
+      </div>
+      <h2 class="section-subheader">General</h2>
+      <div class="section-image">
+        <img src="./img/dingo/workflow-homepage.png">
+      </div>
+      <div class="section-content">
+        <p>I decided to have direct access to all of the app’s functions in the home page to emphasize ease of use. This meant that I had to design the homepage in a way that was clear yet highly functional.</p>
+      </div>
+    </section>
+    <section class="dingo-light">
+      <div class="section-header">
+        <h1>Iterations</h1>
+      </div>
+      <h2 class="section-subheader">Onboarding</h2>
+      <div class="iteration">
+        <div class="iteration-tries">
+          <img src="./img/dingo/iteration/welcome-1.png">
+          <img src="./img/dingo/iteration/welcome-2.png">
         </div>
-        <h2 class="section-subheader">Branding</h2>
-        <div class="section-content left">
-          <p>Dingo is...
-          <br>1) Fun
-          <br>2) Reliable
-          <br>3) Extremely easy to use
-          <br>4) Non-intrusive
-          <br>
-          <br>I designed around these characteristics.</p>
+        <div class="iteration-final">
+          <img src="./img/dingo/final-welcome.png">
         </div>
-        <h2 class="section-subheader">Design System</h2>
-        <div class="section-content left">
-          <p>Font: I chose Open Sans to reflect the reliability and ease of use that Dingo aims to have.</p>
-          <p>Color scheme: I chose a dark color scheme for easier use at night, our targeted time use. I chose navy as the main color because 1) it mimics the night time with a more soothing feel and 2) it is close to the Berkeley logo.</p>
-        </div>
-        <div class="section-image">
-          <img src="./img/dingo/branding.png">
+        <div class="iteration-explanation">
+          <h3>Welcome Screen</h3>
+          <p>I wanted the user to immediately feel calm upon loading the welcome screen.</p>
         </div>
       </div>
-      <div class="dingo-dark">
-        <div class="section-header">
-          <h1>Workflow</h1>
+      <div class="iteration">
+        <div class="iteration-tries">
+          <img src="./img/dingo/iteration/onboarding-friends-1.png">
+          <img src="./img/dingo/iteration/onboarding-friends-2.png">
         </div>
-        <h2 class="section-subheader">Onboarding</h2>
-        <div class="section-image">
-          <img src="./img/dingo/workflow-onboarding.png">
+        <div class="iteration-final">
+          <img src="./img/dingo/final-onboarding-friends.png">
         </div>
-        <div class="section-content">
-          <p>I chose to have the user add the default friends and location with the idea in mind that when they open the app, they only need to tap one button when used to go home.</p>
-        </div>
-        <h2 class="section-subheader">General</h2>
-        <div class="section-image">
-          <img src="./img/dingo/workflow-homepage.png">
-        </div>
-        <div class="section-content">
-          <p>I decided to have direct access to all of the app’s functions in the home page to emphasize ease of use. This meant that I had to design the homepage in a way that was clear yet highly functional.</p>
+        <div class="iteration-explanation">
+          <h3>Onboarding Friends Screen</h3>
+          <p>The biggest question here was how to handle scrolling without cluttering the screen. I decided to go without visible table cells so that the interface was cleaner yet the selections were still clear.</p>
         </div>
       </div>
-      <div class="dingo-light">
-        <div class="section-header">
-          <h1>Iterations</h1>
+      <div class="iteration">
+        <div class="iteration-tries">
+          <img src="./img/dingo/iteration/onboarding-location-1.png">
+          <img src="./img/dingo/iteration/onboarding-location-2.png">
         </div>
-        <h2 class="section-subheader">Onboarding</h2>
-        <div class="iteration">
-          <div class="iteration-tries">
-            <img src="./img/dingo/iteration/welcome-1.png">
-            <img src="./img/dingo/iteration/welcome-2.png">
-          </div>
-          <div class="iteration-final">
-            <img src="./img/dingo/final-welcome.png">
-          </div>
-          <div class="iteration-explanation">
-            <h3>Welcome Screen</h3>
-            <p>I wanted the user to immediately feel calm upon loading the welcome screen.</p>
-          </div>
+        <div class="iteration-final">
+          <img src="./img/dingo/final-onboarding-location.png">
         </div>
-        <div class="iteration">
-          <div class="iteration-tries">
-            <img src="./img/dingo/iteration/onboarding-friends-1.png">
-            <img src="./img/dingo/iteration/onboarding-friends-2.png">
-          </div>
-          <div class="iteration-final">
-            <img src="./img/dingo/final-onboarding-friends.png">
-          </div>
-          <div class="iteration-explanation">
-            <h3>Onboarding Friends Screen</h3>
-            <p>The biggest question here was how to handle scrolling without cluttering the screen. I decided to go without visible table cells so that the interface was cleaner yet the selections were still clear.</p>
-          </div>
-        </div>
-        <div class="iteration">
-          <div class="iteration-tries">
-            <img src="./img/dingo/iteration/onboarding-location-1.png">
-            <img src="./img/dingo/iteration/onboarding-location-2.png">
-          </div>
-          <div class="iteration-final">
-            <img src="./img/dingo/final-onboarding-location.png">
-          </div>
-          <div class="iteration-explanation">
-            <h3>Onboarding Location Screen</h3>
-            <p>The biggest question here was also how to keep the screen uncluttered from all of the instructions while still being intuitive. I layered the search bar and the button over the map so that the map could take up a bigger portion of the screen and maintain a cleaner interface.</p>
-          </div>
-        </div>
-        <h2 class="section-subheader">General</h2>
-        <div class="iteration">
-          <div class="iteration-tries">
-            <img src="./img/dingo/iteration/homepage-1.png">
-            <img src="./img/dingo/iteration/homepage-2.png">
-          </div>
-          <div class="iteration-final">
-            <img src="./img/dingo/final-homepage.png">
-          </div>
-          <div class="iteration-explanation">
-            <h3>Homepage</h3>
-            <p>I tried out a hamburger style menu and a tab bar, and eventually settled on having most of the functionality on the screen minus the logout and about buttons.</p>
-          </div>
-        </div>
-        <div class="iteration">
-          <div class="iteration-tries">
-            <img src="./img/dingo/iteration/notifications-1.png">
-            <img src="./img/dingo/iteration/notifications-2.png">
-          </div>
-          <div class="iteration-final">
-            <img src="./img/dingo/final-notifications.png">
-          </div>
-          <div class="iteration-explanation">
-            <h3>Notifications Page</h3>
-            <p>Here was where I had to consider what users found the most important. I considered having information about which users the current user notified in past trips, but settled on just having notifications for other users' trips upon feedback from peers.</p>
-          </div>
-        </div>
-        <div class="section-header">
-          <h1>Graphics</h1>
-        </div>
-        <div class="section-content">
-          <p>I decided to use graphics for two cases: onboarding and “empty” page cases. These graphics had to align with the color scheme as well as carry out the playfulness that the app should present.</p>
-        </div>
-        <h2 class="section-subheader">Process</h2>
-        <div class="section-image">
-          <img src="./img/dingo/process-location.png">
-          <img src="./img/dingo/process-friends.png">
-        </div>
-        <h2 class="section-subheader">Implementation</h2>
-        <div class="section-image">
-          <div class="section-half"><img src="./img/dingo/screen-location-missing.png"></div>
-          <div class="section-half"><img src="./img/dingo/screen-friends-missing.png"></div>
+        <div class="iteration-explanation">
+          <h3>Onboarding Location Screen</h3>
+          <p>The biggest question here was also how to keep the screen uncluttered from all of the instructions while still being intuitive. I layered the search bar and the button over the map so that the map could take up a bigger portion of the screen and maintain a cleaner interface.</p>
         </div>
       </div>
-      <div class="dingo-dark">
-        <div class="section-header">
-          <h1>Final Prototype</h1>
+      <h2 class="section-subheader">General</h2>
+      <div class="iteration">
+        <div class="iteration-tries">
+          <img src="./img/dingo/iteration/homepage-1.png">
+          <img src="./img/dingo/iteration/homepage-2.png">
         </div>
-        <div class="prototype">
-          <iframe width="375" height="667" src="https://xd.adobe.com/embed/e6d0322b-a6b3-4afc-4e2c-0a03bcd0f012-90e1/" frameborder="0" allowfullscreen></iframe>
+        <div class="iteration-final">
+          <img src="./img/dingo/final-homepage.png">
         </div>
-        <div class="home"><a href="./index.html"><img src="./img/home.png"></a></div>
+        <div class="iteration-explanation">
+          <h3>Homepage</h3>
+          <p>I tried out a hamburger style menu and a tab bar, and eventually settled on having most of the functionality on the screen minus the logout and about buttons.</p>
+        </div>
       </div>
-    </div>
+      <div class="iteration">
+        <div class="iteration-tries">
+          <img src="./img/dingo/iteration/notifications-1.png">
+          <img src="./img/dingo/iteration/notifications-2.png">
+        </div>
+        <div class="iteration-final">
+          <img src="./img/dingo/final-notifications.png">
+        </div>
+        <div class="iteration-explanation">
+          <h3>Notifications Page</h3>
+          <p>Here was where I had to consider what users found the most important. I considered having information about which users the current user notified in past trips, but settled on just having notifications for other users' trips upon feedback from peers.</p>
+        </div>
+      </div>
+      <div class="section-header">
+        <h1>Graphics</h1>
+      </div>
+      <div class="section-content">
+        <p>I decided to use graphics for two cases: onboarding and “empty” page cases. These graphics had to align with the color scheme as well as carry out the playfulness that the app should present.</p>
+      </div>
+      <h2 class="section-subheader">Process</h2>
+      <div class="section-image">
+        <img src="./img/dingo/process-location.png">
+        <img src="./img/dingo/process-friends.png">
+      </div>
+      <h2 class="section-subheader">Implementation</h2>
+      <div class="section-image">
+        <div class="section-half"><img src="./img/dingo/screen-location-missing.png"></div>
+        <div class="section-half"><img src="./img/dingo/screen-friends-missing.png"></div>
+      </div>
+    </section>
+    <section class="dingo-dark">
+      <div class="section-header">
+        <h1>Final Prototype</h1>
+      </div>
+      <div class="prototype">
+        <iframe width="375" height="667" src="https://xd.adobe.com/embed/e6d0322b-a6b3-4afc-4e2c-0a03bcd0f012-90e1/" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="home"><a href="./index.html"><img src="./img/home.png"></a></div>
+    </section>
   </body>
 </html>

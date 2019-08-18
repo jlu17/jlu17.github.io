@@ -1,0 +1,104 @@
+:root {
+  --brown: #591f08;
+  --red: #c40607;
+  --yellow: #fcb52b;
+  --green: #50b648;
+  --blue: #037ea9;
+  --pink: #da3848;
+
+  --lightyellow: #fde08c;
+}
+
+body {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  text-align: left;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: var(--red);
+  font-weight: 1200;
+}
+
+h1 {
+  margin-top: 30px;
+  box-shadow: inset 0em -0.6em var(--lightyellow);
+  display: inline-block;
+}
+
+.apc-logo {
+  padding: 0 20% 3em 20%;
+  width: 60%;
+}
+
+.centered-list {
+  border-style: solid;
+  border-color: var(--lightyellow);
+  margin: 0 30%;
+}
+
+.left-right-split {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.left-right-split > * {
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.apc-left {
+  font-size: 30px;
+  display: inline-block;
+  line-height: normal;
+
+  text-align: right;
+  width: 20%;
+  margin-right: 2%;
+  color: var(--pink);
+}
+
+.apc-vertical-bar {
+ display: inline-block;
+ height: 100px;
+ width:0.5em; /* edit this if you want */
+ background-color: var(--pink);
+}
+
+.apc-right {
+  margin-left: 2%;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 40%;
+}
+
+
+.final-img {
+  width: 50%;
+  margin: auto;
+}
+
+/* Infographic section */
+
+.infographic-img {
+  width: 30%;
+  display: inline-block;
+}
+
+/* FFF section */
+
+
+.fff-img {
+  margin-top: 30px;
+  width: 20%;
+  display: inline-block;
+}

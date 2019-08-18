@@ -1,15 +1,10 @@
-body {
+  body {
   background-color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  min-height: 100%;
-  position: relative;
 }
 
 .header {
@@ -27,6 +22,15 @@ body {
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+
+h2 {
+  color: #669999;
+  letter-spacing: 0.1em;
+  font-weight: 1000;
+  font-family: "Montserrat";
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
 /* The tabs at the top. */
@@ -60,17 +64,11 @@ a {
   display: inline-block;
 }
 
-#home {
-  background-color: #669999;
-  display: inline-block;
-  border-radius: 10px;
-}
-
 /* The section with my face and a short description. */
 
 .description {
   position: relative;
-  margin: 0 50px;
+  margin: 50px;
   text-align: center;
   /* border-style: solid;*/
 }
@@ -94,35 +92,33 @@ a {
 }
 
 .jendescription {
-  margin-left: 50px;
+  margin-left: 10%;
   /* border-style: solid;*/
   display: inline-block;
   overflow-wrap: break-word;
-  width: 50%;
+  width: 40%;
   line-height: normal;
   font-size: 1.1em;
+  text-align: left;
 }
 
-/* The start of all the sections below the header stuff. */
-
-.body {
-  padding-bottom: 200px;
+h2.jenhey {
+  color: #111111;
+  letter-spacing: 0;
+  margin-bottom: 0;
 }
 
-#resume {
-  text-align: center;
-  margin: 10% 15%;
+.booklink {
+  color: rgb(27, 123, 219);
+  font-family: "Montserrat";
 }
 
 /* I have all the sections in one class so that I can change the title color
 and border styles super easily section to section. */
 
-.section-title {
-  color: #669999;
-  letter-spacing: 0.1em;
-}
 
-.section {
+
+.category {
   margin: 4em auto;
   padding: 2em 0;
   border-style: solid;
@@ -132,8 +128,14 @@ and border styles super easily section to section. */
   box-shadow: 2px 2px 6px #EFEFEF;
   /* padding: 10px;
   padding-bottom: 2em;*/
-  max-width: 800px;
+  max-width: 900px;
 }
+
+#resume {
+  text-align: center;
+  margin: 10% 15%;
+}
+
 
 /* Specific to the items section. */
 
@@ -150,7 +152,7 @@ and border styles super easily section to section. */
 .image-and-tools {
   display: inline-block;
   /* border-style: solid; */
-  width: 25%;
+  width: 20%;
   margin-right: 1.5em;
   max-width: 150px;
   text-align: center;
@@ -168,6 +170,8 @@ and border styles super easily section to section. */
 .tools-title {
   margin-top: 0.5em;
   margin-bottom: 0.25em;
+  color: #777777;
+  font-weight: bold;
 }
 
 .item-tools {
@@ -180,17 +184,21 @@ and border styles super easily section to section. */
   margin: 1%;
 }
 
-.item-title {
+h3 {
   font-weight: bold;
+  color: #444444;
   font-size: 1.1em;
+  font-family: "Montserrat";
+  font-size: 18px;
+  display:inline; 
 }
 
 .item-description {
   display: inline-block;
   /* border-style: solid; */
-  width: 50%;
+  width: 60%;
   text-align: left;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .item-short-description {
@@ -278,20 +286,18 @@ and border styles super easily section to section. */
 }
 
 /* Footer */
-.footer {
-  position: absolute;
-  bottom: 0;
+footer {
   width: 100%;
   background-color: #669999;
-  height: 200px;
+  height: 150px;
   text-align: center;
   color: black;
   padding: 10px;
+  padding-top: 60px;
 }
 
-.footer-items {
-    margin: auto;
-    margin-top: 60px;
+footer > * {
+  margin: auto;
 }
 
 .icons {
