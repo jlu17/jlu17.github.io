@@ -36,6 +36,11 @@ a {
   padding-bottom: 30px;
 }
 
+.left-right-split.before-after {
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
 .before-after img {
   background-color: white;
   width: 35%;
